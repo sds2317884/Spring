@@ -1,0 +1,35 @@
+package com.multi.mvc02;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class MemberController {
+	
+	@RequestMapping("insert.multi")
+	public void insert(MemberDTO bag, MemberDAO dao) {
+		System.out.println("클라이언트 회원가입 처리 요청됨.");
+		
+		dao.insert(bag);
+	}
+	
+	@RequestMapping("login.multi")
+	public String login(MemberDTO bag, MemberDAO dao) {
+		System.out.println("로그인 처리 요청됨.");
+		System.out.println(bag);
+		
+		int result = dao.login(bag);
+		
+		if (result==1) {
+			return "ok";
+		} else {
+			return "redirect:member.jsp";
+		}
+	}
+	
+	@RequestMapping("delete.multi")
+	public void delete(String id) {
+		System.out.println("삭제 처리 요청됨." + id);
+		
+	}
+}
