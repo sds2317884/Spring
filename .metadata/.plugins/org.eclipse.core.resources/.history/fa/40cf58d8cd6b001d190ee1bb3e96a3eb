@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>Car 검색 모듈.</h3>
+<hr>
+<a href="car1">Car1호출</a> <br>
+<a href="car2">Car2호출</a> <br>
+<a href="carInsert.jsp">북마크 추가</a> <br>
+<a href="carDelete.jsp">북마크 제거</a> <br>
+<a href="carSelect.jsp">북마크 검색</a> <br>
+<a href="carList">북마크 전체 목록</a> 
+</body>
+</html>

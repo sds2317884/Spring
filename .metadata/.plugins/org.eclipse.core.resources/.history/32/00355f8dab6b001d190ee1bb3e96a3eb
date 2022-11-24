@@ -1,0 +1,8 @@
+package com.multi.mvc02;
+
+public class BookDTO {
+	int id;
+	String name;
+	String url;
+	String img
+}

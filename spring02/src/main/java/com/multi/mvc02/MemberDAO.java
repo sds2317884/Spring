@@ -220,38 +220,40 @@ public class MemberDAO {
 		}
 	} // insert
 	// 기능하나만 메서드 하나 구현(탈퇴기능)
-	public void delete(String id) {
-		// 자바에서 DBMS를 연결하려고 함.
-		// JDBC 프로그래밍 절차
-		// 4단계 절차
-		// 1. 드라이버 설정- 드라이버(커넥터) 로딩
-		// db의 유형, 버전에 따라 매우 많음.
-		// 필요할 때 다운로드 받아 써야 함.
-		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
-			// 특정한 위치에 있는 드라이버 파일을 램에 읽어들여 설정
-			System.out.println("1. 드라이버 설정 성공.@@@@");
-			// 2. db연결 mySQL: school, oracle: xe
-			String url = "jdbc:mysql://localhost:3306/mydb";
-			String user = "abcd";
-			String password = "12345678";
-			Connection con = DriverManager.getConnection(url, user, password); // Connection
-			System.out.println("2. db연결 성공.@@@@@@");
-			// 3. sql문을 만든다.
-			String sql = "delete from member where id = ?";
-			// 준비된 문장(Preparedstatement)
-			PreparedStatement ps = con.prepareStatement(sql);
-			ps.setString(1, id); // 1번 물음표에 id에 저장해놓은 값을 스트링으로 넣어줘!
-			System.out.println("3. sql문 생성 성공.@@@@@");
-			// String site = "http://www.naver.com";
-			// Url url = new Url(site); //객체화!!
-			// 4. sql문을 db서버에 보낸다. --> 결과가 어떻게 되었는지 자바프로그램 알려줌.
-			int result = ps.executeUpdate(); // r의 결과는 table, cud는 숫자(실행된row수) //1
-			System.out.println("4. sql문 db서버로 전송 성공. @@@@@ 반영된 row수 >>" + result);
-			ps.close();
-			con.close();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	} // delete
+		public int delete(String id) {
+			int result = 0; //delete가 안되었을때.!
+			// 자바에서 DBMS를 연결하려고 함.
+			// JDBC 프로그래밍 절차
+			// 4단계 절차
+			// 1. 드라이버 설정- 드라이버(커넥터) 로딩
+			// db의 유형, 버전에 따라 매우 많음.
+			// 필요할 때 다운로드 받아 써야 함.
+			try {
+				Class.forName("com.mysql.cj.jdbc.Driver");
+				// 특정한 위치에 있는 드라이버 파일을 램에 읽어들여 설정
+				System.out.println("1. 드라이버 설정 성공.@@@@");
+				// 2. db연결 mySQL: school, oracle: xe
+				String url = "jdbc:mysql://localhost:3306/mydb";
+				String user = "abcd";
+				String password = "12345678";
+				Connection con = DriverManager.getConnection(url, user, password); // Connection
+				System.out.println("2. db연결 성공.@@@@@@");
+				// 3. sql문을 만든다.
+				String sql = "delete from member where id = ?";
+				// 준비된 문장(Preparedstatement)
+				PreparedStatement ps = con.prepareStatement(sql);
+				ps.setString(1, id); // 1번 물음표에 id에 저장해놓은 값을 스트링으로 넣어줘!
+				System.out.println("3. sql문 생성 성공.@@@@@");
+				// String site = "http://www.naver.com";
+				// Url url = new Url(site); //객체화!!
+				// 4. sql문을 db서버에 보낸다. --> 결과가 어떻게 되었는지 자바프로그램 알려줌.
+				result = ps.executeUpdate(); // r의 결과는 table, cud는 숫자(실행된row수) //1
+				System.out.println("4. sql문 db서버로 전송 성공. @@@@@ 반영된 row수 >>" + result);
+				ps.close();
+				con.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			return result;
+		} // delete
 } // class

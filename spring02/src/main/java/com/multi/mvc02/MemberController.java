@@ -50,6 +50,14 @@ public class MemberController {
 	@RequestMapping("delete.multi")
 	public void delete(String id) {
 		System.out.println("삭제 처리 요청됨." + id);
+		int result = dao.delete(id);
+		
+		if(result==1) {
+			
+		}else {
+			
+		}
+		
 		
 	}
 }

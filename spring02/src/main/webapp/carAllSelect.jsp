@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>선택 검색</h3>
+<form action="one.multi">
+<a href="one.multi?id=1">1번 검색</a> <br>
+<a href="one.multi?id=2">2번 검색</a> <br>
+<a href="one.multi?id=3">3번 검색</a> <br>
+</form>
+<hr>
+</body>
+</html>

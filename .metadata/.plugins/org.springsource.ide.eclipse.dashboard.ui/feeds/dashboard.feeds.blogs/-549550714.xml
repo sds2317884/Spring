@@ -5,7 +5,36 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2022-11-23T10:50:08Z</updated>
+  <updated>2022-11-24T14:38:36Z</updated>
+  <entry>
+    <title>Spring Framework 6.0.2 available now</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/11/24/spring-framework-6-0-2-available-now" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Stéphane Nicoll</name>
+    </author>
+    <id>tag:spring.io,2022-11-24:5017</id>
+    <updated>2022-11-24T14:38:36Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I am pleased to announce that Spring Framework &lt;code&gt;6.0.2&lt;/code&gt; is available now.&lt;/p&gt;
+&lt;p&gt;Spring Framework &lt;code&gt;6.0.2&lt;/code&gt; includes &lt;a href="https://github.com/spring-projects/spring-framework/releases/tag/v6.0.2"&gt;4 fixes and documentation improvements&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://projects.spring.io/spring-framework/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-framework/docs/6.0.2/reference/html/"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Boot 2.6.14 available now</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/11/24/spring-boot-2-6-14-available-now" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Stéphane Nicoll</name>
+    </author>
+    <id>tag:spring.io,2022-11-24:5016</id>
+    <updated>2022-11-24T14:17:48Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I&amp;rsquo;m happy to announce that Spring Boot &lt;code&gt;2.6.14&lt;/code&gt; has been released and is now available from Maven Central.&lt;/p&gt;
+&lt;p&gt;This release includes &lt;a href="https://github.com/spring-projects/spring-boot/releases/tag/v2.6.14"&gt;39 bug fixes, documentation improvements, and dependency upgrades&lt;/a&gt;. Thanks to all those who have contributed with issue reports and pull requests.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
+&lt;p&gt;If you&amp;rsquo;re interested in helping out, check out the &lt;a href="https://github.com/spring-projects/spring-boot/labels/status%3A%20ideal-for-contribution"&gt;&amp;ldquo;ideal for contribution&amp;rdquo; tag&lt;/a&gt; in the issue repository. If you have general questions, please ask on &lt;a href="https://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="https://stackoverflow.com/tags/spring-boot"&gt;&lt;code&gt;spring-boot&lt;/code&gt; tag&lt;/a&gt; or chat with the community on &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://spring.io/projects/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-boot/docs/2.6.14/reference/html"&gt;Documentation&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>Spring Framework 6.0.1 available now</title>
     <link rel="alternate" href="https://spring.io/blog/2022/11/23/spring-framework-6-0-1-available-now" />
@@ -28,8 +57,8 @@
       <name>Brian Clozel</name>
     </author>
     <id>tag:spring.io,2022-11-22:5013</id>
-    <updated>2022-11-23T09:37:07Z</updated>
-    <content type="html">&lt;p&gt;I&amp;rsquo;m pleased to announce that Spring for GraphQL 1.1.0 is now available on Maven Central. This version will ship with Spring Boot 3.0.0 releases later this week.&lt;/p&gt;
+    <updated>2022-11-23T09:37:00Z</updated>
+    <content type="html">&lt;p&gt;I&amp;rsquo;m pleased to announce that Spring for GraphQL 1.1.0 is now available on Maven Central. This version will ship with Spring Boot 3.0.0 later this week.&lt;/p&gt;
 &lt;p&gt;Spring for GraphQL 1.0.0 was released 6 months ago, so why a new minor version now? The team initially planned a 1.1.0 release with one goal in mind: support Spring Framework 6.0 / Spring Boot 3.0 and adapt to the new baseline for that generation:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Java 17&lt;/li&gt;
@@ -44,8 +73,8 @@
 &lt;p&gt;As one example of where the new library brings something new, a &lt;code&gt;ThreadLocal&lt;/code&gt; value from the HTTP layer (e.g. Spring MVC) will now appear as a name-value pair in the &lt;code&gt;GraphQLContext&lt;/code&gt; that&amp;rsquo;s exposed to &lt;code&gt;DataFetcher&lt;/code&gt; components, and therefore a controller method can access that via &lt;code&gt;@ContextValue&lt;/code&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#aot-and-graalvm-native-images" class="anchor" name="aot-and-graalvm-native-images"&gt;&lt;/a&gt;AOT and GraalVM Native Images&lt;/h2&gt;
 &lt;p&gt;Spring Framework 6 and Spring Boot 3.0 introduce support for building memory-efficient and fast, operating system- and architecture-specific, native binaries with GraalVM&amp;rsquo;s native image compiler. To enable this for Spring for GraphQL applications, first we collaborated with the GraphQL Java team to &lt;a href="https://github.com/oracle/graalvm-reachability-metadata/pull/102"&gt;contribute GraphQL Java metadata&lt;/a&gt; to the GraalVM Reachability Metadata Repository, which benefits the entire Java community, not just Spring applications. This covers GraphQL Java itself, but the GraphQL Java engine also needs to perform reflection on application Java types that map to the schema. To accommodate this, we&amp;rsquo;ve also created a dedicated AOT processor that inspects your GraphQL controllers at build time, and makes the necessary registrations.&lt;/p&gt;
 &lt;p&gt;If you&amp;rsquo;d like to give this a try, please start with the &lt;a href="https://docs.spring.io/spring-boot/docs/3.0.0-SNAPSHOT/reference/html/native-image.html#native-image"&gt;Spring Boot reference documentation on Native Images&lt;/a&gt;, and follow the latest updates &lt;a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-with-GraalVM"&gt;on the Spring Boot wiki&lt;/a&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#argument-binding" class="anchor" name="argument-binding"&gt;&lt;/a&gt;Argument Binding&lt;/h2&gt;
-&lt;p&gt;We&amp;rsquo;ve had plenty of great feedback on the limitations from the dependency on Spring Framework&amp;rsquo;s &lt;code&gt;DataBinder&lt;/code&gt; to bind from the GraphQL arguments map to &lt;code&gt;@Argument&lt;/code&gt; method parameters. This included very specific scenarios that involve different collection types, generics, and others on the target objects.&lt;/p&gt;
-&lt;p&gt;Furthermore, a major requirement was to support GraphQL nullability which differentiates between an input argument that is explicitly set to &lt;code&gt;null&lt;/code&gt; vs omitted entirely. This is commonly used to support partial updates. However, when argument binding to higher level objects is automated, a mere &lt;code&gt;null&lt;/code&gt; value in the resulting object graph does not help to differentiate whether the value was &lt;code&gt;null&lt;/code&gt; or not provided at all.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve had plenty of great feedback related to argument binding. There are some limitations from the way we used Spring Framework&amp;rsquo;s &lt;code&gt;DataBinder&lt;/code&gt; to bind from the GraphQL arguments map to &lt;code&gt;@Argument&lt;/code&gt; method parameters. This included specific scenarios with non-ordered collection types, generics, and others on the target objects.&lt;/p&gt;
+&lt;p&gt;Furthermore, a major requirement was to support GraphQL nullability which differentiates between an input argument that is explicitly set to &lt;code&gt;null&lt;/code&gt; vs omitted entirely. This is commonly used to support partial updates. However, with argument binding to higher level objects, a mere &lt;code&gt;null&lt;/code&gt; property in the resulting object graph does not help to differentiate whether the value was set to &lt;code&gt;null&lt;/code&gt; by the client or was not provided at all.&lt;/p&gt;
 &lt;p&gt;In version 1.1, we have introduced the following changes to &lt;code&gt;GraphQlArgumentBinder&lt;/code&gt; that unlocks more possibilities:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;binding to all types of Collections (&lt;code&gt;List&lt;/code&gt;, &lt;code&gt;Map&lt;/code&gt;, &lt;code&gt;Set&lt;/code&gt;)&lt;/li&gt;
@@ -725,34 +754,6 @@ dependencies {&#xD;
 &lt;p&gt;There are many further features and refinements available in Spring Framework 6.0, e.g. an &lt;a href="https://docs.spring.io/spring-framework/docs/6.0.0/reference/html/integration.html#rest-http-interface"&gt;HTTP interface client&lt;/a&gt;, support for &lt;a href="https://docs.spring.io/spring-framework/docs/6.0.0/reference/html/web.html#mvc-ann-rest-exceptions"&gt;RFC 7807 problem details&lt;/a&gt;, and Micrometer-based observability for HTTP clients. Please see our &lt;a href="https://github.com/spring-projects/spring-framework/wiki/What%27s-New-in-Spring-Framework-6.x/"&gt;What&amp;rsquo;s New page&lt;/a&gt; for a comprehensive overview and give 6.0.0 an early try!&lt;/p&gt;
 &lt;p&gt;Cheers,&lt;br/&gt;Juergen&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://projects.spring.io/spring-framework/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework/milestones"&gt;GitHub&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-framework/docs/6.0.0/reference/html/"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Framework 5.3.24 available now</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/11/16/spring-framework-5-3-24-available-now" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Stéphane Nicoll</name>
-    </author>
-    <id>tag:spring.io,2022-11-16:4996</id>
-    <updated>2022-11-16T08:40:20Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I am pleased to announce that Spring Framework &lt;code&gt;5.3.24&lt;/code&gt; is available now.&lt;/p&gt;
-&lt;p&gt;Spring Framework &lt;code&gt;5.3.24&lt;/code&gt; includes &lt;a href="https://github.com/spring-projects/spring-framework/releases/tag/v5.3.24"&gt;33 fixes and improvements&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://projects.spring.io/spring-framework/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-framework/docs/5.3.24/reference/html/"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Cloud Dataflow 2.10.0-RC2 Released</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/11/15/spring-cloud-dataflow-2-10-0-rc2-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Chris Bono</name>
-    </author>
-    <id>tag:spring.io,2022-11-16:4995</id>
-    <updated>2022-11-15T20:00:00Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I’m happy to announce that Spring Cloud Dataflow &lt;code&gt;2.10.0-RC2&lt;/code&gt; has been released and is now available from &lt;a href="https://repo.spring.io/milestone"&gt;https://repo.spring.io/milestone&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This release contains an update of the Spring Boot, Spring Framework, and Spring Cloud versions.&lt;br/&gt;See the &lt;a href="https://github.com/spring-cloud/spring-cloud-dataflow/releases/tag/v2.10.0-RC2"&gt;release notes&lt;/a&gt; for more information.&lt;/p&gt;&lt;h2&gt;&lt;a href="#stay-in-touch-hellip" class="anchor" name="stay-in-touch-hellip"&gt;&lt;/a&gt;Stay in touch&amp;hellip;&lt;/h2&gt;
-&lt;p&gt;As always, we welcome feedback and contributions, so please reach out to us on &lt;a href="https://stackoverflow.com/questions/tagged/spring-cloud-dataflow"&gt;Stackoverflow&lt;/a&gt; or &lt;a href="https://github.com/spring-cloud/spring-cloud-dataflow/issues"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>

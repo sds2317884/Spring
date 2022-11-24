@@ -1,0 +1,28 @@
+<%@page import="com.multi.mvc02.CarDTO"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+body{
+	background: blue;
+	color: yellow;
+}
+</style>
+</head>
+<body>
+<%
+	CarDTO bag = new CarDTO();
+%>
+<h3>Car: 서버 전달완료.</h3>
+<hr>
+검색된 id: ${bag.id} <br>
+검색된 name: ${bag.name} <br>
+검색된 url: <a href=${bag.url}> ${bag.url}</a> <br>
+검색된 img: <img src="resources/img/${bag.img}">
+</body>
+</html>

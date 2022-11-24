@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<body>
+<h3>검색 결과 입니다.</h3>
+<hr>
+검색된 id: ${bag2.id} <br>
+검색된 name: ${bag2.name} <br>
+검색된 url: <a href=${bag2.url}>${bag2.url}</a> <br>
+검색된 img: <img src="resources/img/${bag2.img}">
+
+</body>
+</html>
