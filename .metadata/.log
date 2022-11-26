@@ -8069,3 +8069,9 @@ java.lang.IllegalStateException: Conflicting handlers: {[mnita.ansiconsole.comma
 
 !ENTRY org.eclipse.jst.server.tomcat.core 1 0 2022-11-24 17:43:08.333
 !MESSAGE Skipping argument '-Djava.endorsed.dirs=/usr/local/apache-tomcat-8.5.83/endorsed' while launching Tomcat v8.5 Server at localhost
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-26 09:50:15.844
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-26 09:50:15.850
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!

@@ -3,11 +3,43 @@ package com.multi.mvc02;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.util.ArrayList;
 
 import org.springframework.stereotype.Component;
 
 @Component
 public class BookDAO {
+	public ArrayList<BookDTO> list() {
+		ArrayList<BookDTO> list = new ArrayList<>();
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			String url = "jdbc:mysql://localhost:3306/mydb";
+			String user = "abcd";
+			String password = "12345678";
+			Connection con = DriverManager.getConnection(url, user, password); // Connection
+			String sql = "select * from book";
+			PreparedStatement ps = con.prepareStatement(sql);
+			ResultSet rs = ps.executeQuery(); // r의 결과는 table, cud는 숫자(실행된row수) //1
+			while (rs.next()) { // 결과값이 true이면!!
+				BookDTO bag = new BookDTO();
+				bag.setId(rs.getInt(1));
+				bag.setName(rs.getString(2));
+				bag.setUrl(rs.getString(3));
+				bag.setImg(rs.getString(4));
+				list.add(bag);
+			} // while
+			System.out.println("box(list)에 들어간 가방의 갯수>> " + list.size());
+			// db처리와 관련된 메모리 할당된 것 해제시켜주자.
+			ps.close();
+			con.close();
+			rs.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		// 메서드의 처리를 다 끝내고, 결과를 보내줘라는 개념. 맨 끝에 써야함.
+		return list;
+	} // list
+	
 	public void insert(BookDTO bag) { // String id
 		System.out.println(bag); // toString()호출, 가방에 들어있는 값들이 프린트
 		// 자바에서 DBMS를 연결하려고 함.
@@ -18,7 +50,7 @@ public class BookDAO {
 		// 필요할 때 다운로드 받아 써야 함.
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			// 특정한 위치에 있는 드라이버 파일을 램에 읽어들여 설정
+			// 특정한 위치에 있는 드라이버 파일을 램에 읽어들여 설정.
 			System.out.println("1. 드라이버 설정 성공.@@@@");
 			// 2. db연결 mySQL: school, oracle: xe
 			String url = "jdbc:mysql://localhost:3306/mydb";
