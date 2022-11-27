@@ -79,7 +79,7 @@ public class BookDAO {
 			} catch (Exception e) {
 				System.out.println("회원가입시 에러발생");
 			}
-			// JOptionPane.showMessageDialog(null, result2); //컴파일 에러
+			// JOptionPane.showMessageDialog(null, result2); //컴파일 에러.
 			ps.close();
 			con.close();
 		} catch (Exception e) {
