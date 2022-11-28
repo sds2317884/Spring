@@ -108,6 +108,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/Users/shinchanghyeok/Downloads/spring33"/>
 			<item value="/Users/shinchanghyeok/Desktop/4학년_2학기/멀티캠퍼스/Spring"/>
 		</list>
 	</section>
@@ -124,5 +125,7 @@
 			<item key="DIALOG_Y_ORIGIN" value="614"/>
 			<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
 		</section>
+	</section>
+	<section name="ExternalProjectImportWizard">
 	</section>
 </section>

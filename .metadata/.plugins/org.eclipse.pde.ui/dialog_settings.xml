@@ -3,4 +3,8 @@
 	<section name="ConvertedProjectWizard">
 		<item key="apiAnalysis" value="false"/>
 	</section>
+	<section name="quick_assist_proposal_size">
+	</section>
+	<section name="PDEFormActionManager">
+	</section>
 </section>
