@@ -1,7 +1,5 @@
 INDEX VERSION 1.4+/Users/shinchanghyeok/Desktop/4학년_2학기/멀티캠퍼스/Spring/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
-3613003717.index
 651074708.index
-3803559256.index
 1372171266.index
 4043996451.index
 1166082640.index
