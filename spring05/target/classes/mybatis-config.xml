@@ -10,7 +10,7 @@
   
    </typeAliases>
    <mappers>
-   <!-- SQL문 정의하는 파일들의 목록을 지정. -->
+   <!-- SQL문 정의하는 파일들의 목록을 지정 -->
       <mapper resource="mapper/memberMapper.xml" />
 
    </mappers>

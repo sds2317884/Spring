@@ -5226,3 +5226,9 @@ org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 3; The markup in th
 
 !ENTRY org.eclipse.jst.server.tomcat.core 1 0 2022-11-28 17:35:23.559
 !MESSAGE Skipping argument '-Djava.endorsed.dirs=/usr/local/apache-tomcat-8.5.83/endorsed' while launching Tomcat v8.5 Server at localhost
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-29 09:40:13.937
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-29 09:40:13.944
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
