@@ -15,7 +15,7 @@
 	</form>
 	<hr>
 	<h3>북마크 추가</h3>
-	<form action="create">
+	<form action="create2">
 		이름 : <input type="text" name="name"><br>
 		URL : <input type="text" name="url"><br>
 		IMG : <input type="text" name="img"><br>

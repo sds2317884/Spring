@@ -62,7 +62,7 @@ public class BookController {
 		
 	}
 	
-	@RequestMapping("insert.do")
+	@RequestMapping("create2")
 	public void insert(BookVO vo, BookDAO dao) throws Exception {
 		System.out.println("북마크 제어 요청됨.");
 		dao.create(vo);
