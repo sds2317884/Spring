@@ -18,7 +18,7 @@
 
 	<!-- myBatis설정만을 담당해주는 클래스 -->
 	<bean id="config" class="org.mybatis.spring.SqlSessionFactoryBean">
-		<!--DB프로그램 중 1-2번을 담당하는 dbcp를 끼워넣자. -->
+		<!--DB프로그램 중 1-2번을 담당하는 dbcp를 끼워넣자 -->
 		<property name="dataSource" ref="dbcp"></property>
 		<!--DB프로그램 중 3번을 담당하는 파일의 위치와 파일이름 지정해주자. -->
 		<property name="configLocation"
